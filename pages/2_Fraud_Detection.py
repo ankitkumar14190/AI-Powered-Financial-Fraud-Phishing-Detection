@@ -1,19 +1,3 @@
-"""
-Fraud Detection page.
-
-Now has two tabs:
-  * Batch CSV Upload (original functionality, unchanged behavior)
-  * Single Transaction Check (new) -- a manual entry form for a live demo,
-    with a SHAP explanation of *why* the model made its call.
-
-Performance/error-handling notes carried over from the previous version:
-  * FraudPredictor() and FraudExplainer() are both wrapped in
-    st.cache_resource so the model (and the SHAP explainer, which is not
-    cheap to build) load once per session, not on every click.
-  * FileNotFoundError (no trained model) vs ValueError (bad columns) are
-    handled separately so the user gets an actionable message either way.
-"""
-
 import random
 
 import pandas as pd

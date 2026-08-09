@@ -1,12 +1,3 @@
-"""
-Phishing Detection page.
-
-New in this version: an optional VirusTotal threat-intel lookup that
-enriches the local heuristic score. Fully optional -- if no VT_API_KEY is
-configured, the page still works exactly as before and just shows an
-info banner explaining how to enable it.
-"""
-
 import streamlit as st
 
 from src.core.phishing.detector import PhishingDetector, finalize_result

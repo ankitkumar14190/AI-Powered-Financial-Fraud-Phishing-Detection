@@ -1,13 +1,3 @@
-"""
-Dashboard page.
-
-New in this version:
-  * Trend-over-time charts (daily fraud/phishing volume) for both tabs.
-  * CSV export for each history table.
-  * A "Download PDF Report" button that summarizes both modules plus the
-    Unified Risk Score into a single one-page PDF.
-"""
-
 import streamlit as st
 
 from src.database.db import get_all_predictions, get_all_phishing_scans

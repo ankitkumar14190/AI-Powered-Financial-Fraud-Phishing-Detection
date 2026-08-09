@@ -1,12 +1,3 @@
-"""
-Unified Risk Score page.
-
-New page: combines Fraud and Phishing history into a single blended
-"organizational risk" score (60% fraud rate / 40% phishing rate), so a
-judge/analyst gets one headline number instead of having to mentally
-combine two separate dashboards.
-"""
-
 import streamlit as st
 
 from src.database.db import get_all_predictions, get_all_phishing_scans
