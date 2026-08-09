@@ -1,11 +1,3 @@
-"""
-Data loading and preprocessing for the fraud detection model.
-
-Change vs original: test_size / random_state were magic numbers hardcoded
-here; they now come from src/config/config.py so train_model.py and any
-future retraining script/notebook share one source of truth.
-"""
-
 from pathlib import Path
 from typing import Tuple
 

@@ -1,13 +1,3 @@
-"""
-Trains the Random Forest fraud detection model and saves it + the scaler
-to disk.
-
-Change vs original: n_estimators=200 was hardcoded with a stray typo
-("model =RandomForestClassifier"); hyperparameters now come from config.py,
-and print() statements were replaced with proper logging so training runs
-show up in logs/app.log alongside the rest of the app.
-"""
-
 import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix

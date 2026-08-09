@@ -1,5 +1,13 @@
 # 🛡️ AI-Powered Financial Fraud & Phishing Detection Platform
 
+## Team Name: ENIGMA
+
+## Deployment link:- 
+
+## Project PPT:- 
+
+## Demo Video:- 
+
 ## Overview
 
 An AI-powered cybersecurity and FinTech platform that detects:

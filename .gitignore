@@ -4,5 +4,5 @@ __pycache__/
 .env
 logs/
 data/
-database/
+database/fraud.db
 .streamlit/secrets.toml

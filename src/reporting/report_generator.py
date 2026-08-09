@@ -1,11 +1,3 @@
-"""
-Generates a one-page PDF summary report from the Dashboard's metrics.
-
-Kept deliberately simple (fpdf2, no external templates/HTML rendering) so
-it has no extra system dependencies beyond what's in requirements.txt --
-important for a hackathon deployment where install time is limited.
-"""
-
 from datetime import datetime
 
 from fpdf import FPDF

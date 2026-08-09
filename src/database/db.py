@@ -1,21 +1,3 @@
-"""
-SQLite persistence layer.
-
-Fixes vs the original version:
-  * BUG: the original module computed its own DATABASE_PATH = Path("database")/"fraud.db",
-    which is a path *relative to the current working directory*. src/config/config.py
-    already defines an absolute DATABASE_PATH anchored to the project root. Depending on
-    where `streamlit run` was launched from, the app could silently read/write two
-    different database files. Fixed by importing the single source of truth from config.
-  * Connections are now opened/closed with a context manager so a crash mid-query can't
-    leak an open sqlite3 connection.
-  * Added a `phishing_scans` table -- previously phishing results were never persisted,
-    so the Dashboard could only ever show fraud transactions even though phishing
-    detection is a core advertised feature.
-  * All operations are wrapped in try/except with logging instead of failing silently
-    or crashing the Streamlit app with an unhandled traceback.
-"""
-
 import sqlite3
 from contextlib import contextmanager
 from typing import List, Tuple

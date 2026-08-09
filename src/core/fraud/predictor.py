@@ -1,15 +1,3 @@
-"""
-Wraps the trained Random Forest model for batch fraud prediction.
-
-Fixes vs the original version:
-  * BUG: if models/fraud_model.pkl doesn't exist yet (e.g. fresh clone before
-    running train_model.py), joblib.load raised a raw FileNotFoundError with
-    no guidance. Now caught and re-raised with an actionable message.
-  * Adds logging instead of failing silently.
-  * Column validation errors are now logged, not just raised, for easier
-    debugging from logs/app.log.
-"""
-
 import joblib
 import pandas as pd
 

@@ -1,12 +1,3 @@
-"""
-Shared utility helpers.
-
-This module previously existed as an empty stub. It now hosts a single
-reusable logger factory so every module in the project logs consistently
-to both the console and logs/app.log, instead of using scattered
-print() statements (as train_model.py and create_sample.py used to do).
-"""
-
 import logging
 
 from src.config.config import LOG_FILE

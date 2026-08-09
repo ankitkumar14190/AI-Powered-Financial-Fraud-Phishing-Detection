@@ -1,20 +1,3 @@
-"""
-Rule-based phishing URL detector.
-
-Fixes vs the original version:
-  * BUG: `except:` (bare except) silently swallowed every possible error,
-    including typos and programming mistakes, not just the expected
-    ValueError from ipaddress.ip_address(). Now catches ValueError only.
-  * BUG: parsed.hostname can be None (e.g. for a malformed URL like "not a url"),
-    which used to raise inside the bare except and get hidden. Now handled
-    explicitly in url_features.uses_ip_address().
-  * No input validation previously existed -- an empty string or a URL with
-    no scheme (e.g. "example.com") silently produced a low, misleading score.
-    analyze() now raises a clear ValueError the UI layer can catch and display.
-  * All scoring logic now delegates to url_features.py (pure functions) and
-    rules.py (weights/thresholds), so this class is just orchestration.
-"""
-
 from urllib.parse import urlparse
 
 from src.core.phishing import url_features

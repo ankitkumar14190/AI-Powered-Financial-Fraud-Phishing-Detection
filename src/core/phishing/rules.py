@@ -1,11 +1,3 @@
-"""
-Rule definitions and weights for the phishing heuristic scorer.
-
-Centralizing the weights and keyword list here (previously hardcoded
-directly inside detector.py) makes tuning the detector a config change
-instead of a code change, and lets url_features.py stay pure/reusable.
-"""
-
 from src.config.config import PHISHING_SAFE_THRESHOLD, PHISHING_SUSPICIOUS_THRESHOLD
 
 # Score contribution of each heuristic when it fires.

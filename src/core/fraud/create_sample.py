@@ -1,8 +1,3 @@
-"""
-Generates assets/sample_transactions.csv from the training dataset, for
-demoing the Fraud Detection page without needing the full creditcard.csv.
-"""
-
 import pandas as pd
 
 from src.config.config import DATASET_PATH, SAMPLE_TRANSACTIONS_PATH

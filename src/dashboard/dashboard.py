@@ -1,13 +1,3 @@
-"""
-Dashboard data-shaping helpers.
-
-Previously this file was empty and pages/4_Dashboard.py built its DataFrame
-and metrics inline. Moving that logic here means:
-  * pages/4_Dashboard.py becomes a thin view layer (as it should be)
-  * the same helpers can be reused if a phishing history tab, an API,
-    or a future export feature needs the same data shape
-"""
-
 from typing import List, Tuple
 
 import pandas as pd

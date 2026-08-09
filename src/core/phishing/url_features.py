@@ -1,13 +1,3 @@
-"""
-Pure, side-effect-free URL feature extractors used by the phishing detector.
-
-These used to live inline inside detector.py's analyze() method as one long
-function. Splitting them out here means:
-  * each rule is independently unit-testable
-  * detector.py stops being a 90-line "god method"
-  * this file (which existed as an empty stub) now actually does something
-"""
-
 from urllib.parse import ParseResult
 import ipaddress
 

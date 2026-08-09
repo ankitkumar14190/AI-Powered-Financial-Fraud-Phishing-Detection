@@ -1,17 +1,3 @@
-"""
-Optional VirusTotal integration for the phishing detector.
-
-Design goal: the heuristic scanner (detector.py) must keep working with
-zero configuration, since that's what makes the project easy to demo/judge.
-This client is purely additive -- if no API key is configured, callers get
-back {"available": False, ...} and the UI just skips this section.
-
-Get a free VirusTotal API key at https://www.virustotal.com/gui/join-us
-and set it as the VT_API_KEY environment variable, or in
-.streamlit/secrets.toml as:
-    VT_API_KEY = "your-key-here"
-"""
-
 import base64
 import os
 

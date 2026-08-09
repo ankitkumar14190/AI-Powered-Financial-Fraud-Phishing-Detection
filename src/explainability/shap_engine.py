@@ -1,20 +1,3 @@
-"""
-SHAP-based explainability for the fraud Random Forest model.
-
-Why this exists: a bare "Fraud / Not Fraud" label with a confidence number
-doesn't tell an analyst (or a hackathon judge) *why* the model decided that.
-This wraps shap.TreeExplainer (native, fast support for tree ensembles like
-RandomForestClassifier) and returns the top contributing features for a
-single transaction, in plain, human-readable form.
-
-Note on shap's output shape: depending on the installed shap version,
-`TreeExplainer(...).shap_values(X)` can return either:
-  * a list of two (n_samples, n_features) arrays, one per class, or
-  * a single (n_samples, n_features, n_classes) array.
-Both are handled explicitly below instead of assuming one shape and
-crashing on the other.
-"""
-
 from typing import List, Tuple
 
 import pandas as pd
