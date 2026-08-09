@@ -2,11 +2,11 @@
 
 ## Team Name: ENIGMA
 
-## Deployment link:- 
+## Deployment link:- https://ai-powered-financial-fraud-phishing-detection-fpo2wyb5kz9kdgjx.streamlit.app/
 
-## Project PPT:- 
+## Project PPT:- https://docs.google.com/presentation/d/1zWp34CKI7Rb-FRGtLULha3TJmxHzDe3y/edit?usp=sharing&ouid=111010281849703793989&rtpof=true&sd=true
 
-## Demo Video:- 
+## Demo Video:- https://drive.google.com/file/d/1x_wx8rOOWEiJe8ZRA0qvO_4PzcRDHkGV/view?usp=sharing
 
 ## Overview
 
