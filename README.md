@@ -120,3 +120,6 @@ All modules log to `logs/app.log` (and the console) via `src/utils/helpers.get_l
 * Real-time phishing intelligence APIs
 * Email alerts
 * User authentication
+
+## Creditcard.csv
+Get the Creditcard.csv from the https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data. You need to create a free account on kaggle to download this datasets. 
