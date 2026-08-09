@@ -1,13 +1,3 @@
-"""
-Centralized configuration for the platform.
-
-Every path and tunable constant used anywhere in the codebase must be
-imported from this module. Do NOT hardcode paths elsewhere -- that was
-the source of a real bug where the SQLite database ended up in two
-different locations depending on the working directory the app was
-launched from (see src/database/db.py history).
-"""
-
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
