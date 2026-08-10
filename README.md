@@ -8,6 +8,8 @@
 
 ## Demo Video:- https://drive.google.com/file/d/1x_wx8rOOWEiJe8ZRA0qvO_4PzcRDHkGV/view?usp=sharing
 
+## Documentation link:- https://drive.google.com/file/d/1VzACTqEAecDE88BUNETUo-Z70aUVmtt6/view?usp=sharing
+
 ## Overview
 
 An AI-powered cybersecurity and FinTech platform that detects:
